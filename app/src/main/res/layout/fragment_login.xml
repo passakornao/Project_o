@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/wallpaper_all">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:layout_width="353dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="20dp"
+                android:shadowColor="#00000000"
+                android:text="The Barber"
+                android:textColor="#FFFFFF"
+                android:textSize="72dp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#99FCFCFC"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="16dp"
+                android:shadowColor="#7908F0"
+                android:textColor="#000000"
+                android:textColorHighlight="#1AFFFFFF"
+                android:textColorHint="#000000"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#99FFFFFF"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#D1FDD2"
+                android:text="SIGN IN"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>
